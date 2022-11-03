@@ -452,8 +452,36 @@ body {
   color: #8f95a5;
 }
 
+.form {
+  display: flex;
+}
+
+.form-input {
+  width: 425px;
+  height: 70px;
+
+  padding: 0 30px;
+
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--paragraph-color);
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--paragraph-color);
+}
+
 .subscribe-btn {
   min-width: 312px;
+
+  margin-left: 30px;
   padding: 20px 0;
 
   background-color: #263238;

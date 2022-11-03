@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -44,7 +48,7 @@
               <img
                 src="./images/bulb-icon.svg"
                 alt="lamp"
-                width="84"
+                width="85"
                 class="img-svg"
               />
             </div>
@@ -213,7 +217,19 @@
                 English test. Sign up to our newsletter for learning tips and
                 free resources
               </p>
-              <button type="button" class="subscribe-btn">Subscribe</button>
+
+              <form class="form">
+                <label class="label">
+                  <input
+                    type="text"
+                    name="text"
+                    placeholder="Enter Your E-mail"
+                    class="form-input"
+                    required
+                  />
+                </label>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+              </form>
             </div>
           </div>
         </div>
