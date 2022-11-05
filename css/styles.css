@@ -12,12 +12,6 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 ul {
   margin: 0;
   padding-left: 0;
