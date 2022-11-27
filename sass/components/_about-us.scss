@@ -1,0 +1,56 @@
+.about {
+  padding-bottom: 180px;
+}
+
+.about__container {
+  display: flex;
+  gap: 146px;
+}
+
+.about__title {
+  margin-bottom: 60px;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: $main-logo-btn-color;
+}
+
+.about__text {
+  width: 652px;
+
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: $paragraph-color;
+}
+
+.about__list {
+  display: flex;
+  text-align: center;
+  gap: 131px;
+}
+
+.about__items {
+  flex-basis: calc((100% - 262px) / 3);
+}
+
+.about__numbers {
+  margin-bottom: 6px;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: $numbers-color;
+}
+
+.about__descr {
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: $paragraph-color;
+}

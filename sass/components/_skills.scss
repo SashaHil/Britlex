@@ -1,0 +1,128 @@
+.skills {
+  padding-bottom: 180px;
+}
+
+.skills__title {
+  margin-bottom: 60px;
+
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: $main-logo-btn-color;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.skills__items {
+  background-color: $background-color;
+
+  border-radius: 10px;
+}
+
+.skills__items--one {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.skills__items--two {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.skills__items--three {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.skills__items--four {
+  display: flex;
+  gap: 114px;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.skills__subtitle {
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+
+  color: $second-main-color;
+}
+
+.skills__header-last {
+  margin-top: 32px;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+
+  color: $second-main-color;
+}
+
+.skills__text {
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: $paragraph-color;
+}
+
+.skills__speaking {
+  padding-left: 18px;
+  padding-right: 60px;
+  padding-bottom: 154px;
+}
+
+.skills__writing {
+  padding-left: 18px;
+  padding-right: 68px;
+  padding-bottom: 32px;
+}
+
+.skills__reading {
+  padding-left: 18px;
+  padding-right: 49px;
+  padding-bottom: 32px;
+}
+
+.skills__listening {
+  padding-left: 18px;
+  padding-bottom: 79px;
+}
+
+.thirt__btn {
+  min-width: 218px;
+  padding: 15px 0;
+
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: $main-white-color;
+  background-color: $second-main-color;
+
+  cursor: pointer;
+
+  transition: color $cubic, background-color $cubic, box-shadow $cubic;
+
+  &:hover,
+  &:focus {
+    color: $second-main-color;
+    background-color: $main-white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.459);
+  }
+}

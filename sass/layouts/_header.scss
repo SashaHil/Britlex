@@ -1,0 +1,54 @@
+.header {
+  padding: 45px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__link {
+  display: block;
+  padding: 30px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: $second-main-color;
+
+  transition: transform $cubic;
+
+  &.link {
+    transform: scale(1);
+  }
+
+  &.link:hover,
+  &.link:focus {
+    transform: scale(1.25);
+  }
+}
+
+.logo {
+  margin-right: 236px;
+
+  font-size: 36px;
+  line-height: 1.5;
+  text-decoration: none;
+
+  color: $main-logo-btn-color;
+}
+
+.logo__word {
+  color: $second-logo-color;
+}

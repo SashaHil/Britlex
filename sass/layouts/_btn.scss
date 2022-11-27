@@ -1,0 +1,27 @@
+.header__btn {
+  min-width: 312px;
+
+  margin-left: auto;
+  padding: 20px 0;
+
+  border-radius: 10px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $main-logo-btn-color;
+  background-color: $main-white-color;
+
+  cursor: pointer;
+
+  transition: color $cubic, background-color $cubic, box-shadow $cubic;
+
+  &:hover,
+  &:focus {
+    color: $main-white-color;
+    background-color: $second-main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.288);
+  }
+}
