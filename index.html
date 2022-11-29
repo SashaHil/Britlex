@@ -37,6 +37,7 @@
     </header>
 
     <main>
+      <!-- ГЕРОЙ -->
       <section class="hero">
         <div class="container hero__section">
           <div>
@@ -59,7 +60,9 @@
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <button type="button" class="hero__btn">Get started</button>
+            <button type="button" class="hero__btn" data-modal-open>
+              Get started
+            </button>
           </div>
           <img
             src="./images/learning-languages.png"
@@ -70,6 +73,7 @@
         </div>
       </section>
 
+      <!-- НАВИЧКИ -->
       <section class="skills">
         <div class="container">
           <h2 id="skills" class="skills__title">Skills</h2>
@@ -139,6 +143,7 @@
         </div>
       </section>
 
+      <!-- ПРО НАС -->
       <section class="about">
         <div class="container about__container">
           <div>
@@ -170,6 +175,7 @@
         </div>
       </section>
 
+      <!-- ЦІНИ -->
       <section class="pricing">
         <div class="container">
           <h2 id="pricing" class="pricing__title">Pricing</h2>
@@ -209,6 +215,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- КОНТАКТИ -->
       <section class="contact">
         <div class="container">
           <div class="contact__block">
@@ -256,5 +264,92 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form>
+          <p class="modal__text">
+            Type your info here and chose the Language you want to study
+          </p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder=" "
+              class="form__input"
+              required
+            />
+            <label for="name" class="form__label">First name</label>
+          </div>
+
+          <div class="form__field">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder=" "
+              class="form__input"
+              required
+            />
+            <label for="text" class="form__label">Last name</label>
+          </div>
+
+          <div class="form__field">
+            <input
+              type="tel"
+              name="phone_number"
+              id="tel"
+              placeholder=" "
+              class="form__input"
+              required
+            />
+            <label for="tel" class="form__label">Tel</label>
+          </div>
+
+          <div class="form__field">
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder=" "
+              class="form__input"
+              required
+            />
+            <label for="mail" class="form__label">Email</label>
+          </div>
+
+          <div class="form__field">
+            <label for="language" class="form__language">Languages</label>
+            <select id="language" name="language" class="form__input" required>
+              <option value="en">English</option>
+              <option value="uk" selected>Ukrainian</option>
+              <option value="esp">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+
+          <label for="checkbox" class="checkbox">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox__form"
+              required
+            />
+            <svg class="checkbox__mark" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-check"></use>
+            </svg>
+            I agree with the mailing and accept
+            <a href="#" class="checkbox__link">Terms of Conditions</a>
+          </label>
+
+          <button type="submit" class="modal__btn">Send</button>
+        </form>
+        <svg class="modal__icon" width="40" height="40" data-modal-close>
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
