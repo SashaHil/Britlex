@@ -49,7 +49,6 @@
 }
 
 .skills__subtitle {
-  margin-top: 24px;
   margin-bottom: 20px;
 
   font-weight: 600;
@@ -80,26 +79,19 @@
 }
 
 .skills__speaking {
-  padding-left: 18px;
-  padding-right: 60px;
-  padding-bottom: 154px;
+  padding: 24px 60px 154px 18px;
 }
 
 .skills__writing {
-  padding-left: 18px;
-  padding-right: 68px;
-  padding-bottom: 32px;
+  padding: 24px 68px 32px 18px;
 }
 
 .skills__reading {
-  padding-left: 18px;
-  padding-right: 49px;
-  padding-bottom: 32px;
+  padding: 24px 49px 32px 18px;
 }
 
 .skills__listening {
-  padding-left: 18px;
-  padding-bottom: 79px;
+  padding: 24px 0 79px 18px;
 }
 
 .thirt__btn {

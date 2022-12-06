@@ -16,6 +16,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -31,14 +32,34 @@ body {
 }
 
 .container {
-  width: 1378px;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
+@media screen and (min-width: 575px) {
+  .container {
+    max-width: 575px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 1338px) {
+  .container {
+    max-width: 1338px;
+  }
+}
 
 .header {
-  padding: 45px 0;
+  padding: 55px 0 70px 0;
 }
 
 .header-container {
@@ -124,15 +145,44 @@ body {
 }
 
 .hero {
-  padding-top: 10px;
   padding-bottom: 180px;
 }
 
-.hero__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 144px;
+@media screen and (max-width: 767px) {
+  .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 22px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 41px;
+  }
+}
+@media screen and (min-width: 1338px) {
+  .hero__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 120px;
+  }
 }
 
 .hero__title {
@@ -154,8 +204,10 @@ body {
           align-items: center;
 }
 
-.img__svg {
-  width: 115px;
+@media screen and (max-width: 767px) {
+  .hero__icon {
+    display: none;
+  }
 }
 
 .hero__text {
@@ -242,7 +294,6 @@ body {
 }
 
 .skills__subtitle {
-  margin-top: 24px;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 30px;
@@ -267,26 +318,19 @@ body {
 }
 
 .skills__speaking {
-  padding-left: 18px;
-  padding-right: 60px;
-  padding-bottom: 154px;
+  padding: 24px 60px 154px 18px;
 }
 
 .skills__writing {
-  padding-left: 18px;
-  padding-right: 68px;
-  padding-bottom: 32px;
+  padding: 24px 68px 32px 18px;
 }
 
 .skills__reading {
-  padding-left: 18px;
-  padding-right: 49px;
-  padding-bottom: 32px;
+  padding: 24px 49px 32px 18px;
 }
 
 .skills__listening {
-  padding-left: 18px;
-  padding-bottom: 79px;
+  padding: 24px 0 79px 18px;
 }
 
 .thirt__btn {
@@ -452,7 +496,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 144px;
+  gap: 106px;
 }
 
 .contact__title {
@@ -727,6 +771,10 @@ body {
 }
 .form__input:focus {
   border: 1px solid #263238;
+}
+
+select[id=language] {
+  padding-left: 20px;
 }
 
 .form__language {
